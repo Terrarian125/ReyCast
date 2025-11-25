@@ -19,6 +19,9 @@
     <Filter Include="ヘッダー ファイル\Engine">
       <UniqueIdentifier>{28b4e3fd-55b6-4647-b896-4f41731fa116}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Model">
+      <UniqueIdentifier>{c81f9eeb-fc4e-4e07-a6db-162fababcd9b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
