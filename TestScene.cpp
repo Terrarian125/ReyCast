@@ -2,7 +2,7 @@
 #include "TestScene.h"
 #include "Engine/Input.h"
 #include "Engine/SceneManager.h"
-#include "Test.h"
+//#include "Test.h"
 
 TestScene::TestScene(GameObject* parent)
 	: GameObject(parent, "TestScene")
@@ -16,7 +16,7 @@ TestScene::~TestScene()
 void TestScene::Initialize()
 {
 	// Test‚ğ¶¬‚µ‚ÄAq‚É’Ç‰Á  
-	Instanitiate<Test>(this);
+	//Instanitiate<Test>(this);
 
 }
 
