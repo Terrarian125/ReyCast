@@ -34,33 +34,33 @@ void Camera::Update()
 	XMVECTOR forward = XMVector3Normalize(XMVector3Cross(XMVectorSet(0, 1, 0, 0), right));
 	XMVECTOR up = XMVectorSet(0, 1, 0, 0); // è„ï˚å¸
 
-	const float moveSpeed = 0.2f;
-	const float rotateSpeed = 0.2f;
+	const float moveSpeed = 0.1f;
+	const float rotateSpeed = 0.1;
 
-	//if (GetAsyncKeyState('W') & 0x8000)
-	//{
-	//	XMVECTOR move = XMVectorScale(forward, moveSpeed);
-	//	position_ = XMVectorAdd(position_, move);
-	//	target_ = XMVectorAdd(target_, move);
-	//}
-	//if (GetAsyncKeyState('S') & 0x8000)
-	//{
-	//	XMVECTOR move = XMVectorScale(forward, -moveSpeed);
-	//	position_ = XMVectorAdd(position_, move);
-	//	target_ = XMVectorAdd(target_, move);
-	//}
-	//if (GetAsyncKeyState('A') & 0x8000)
-	//{
-	//	XMVECTOR move = XMVectorScale(right, moveSpeed);
-	//	position_ = XMVectorAdd(position_, move);
-	//	target_ = XMVectorAdd(target_, move);
-	//}
-	//if (GetAsyncKeyState('D') & 0x8000)
-	//{
-	//	XMVECTOR move = XMVectorScale(right, -moveSpeed);
-	//	position_ = XMVectorAdd(position_, move);
-	//	target_ = XMVectorAdd(target_, move);
-	//}
+	if (GetAsyncKeyState('W') & 0x8000)
+	{
+		XMVECTOR move = XMVectorScale(forward, moveSpeed);
+		position_ = XMVectorAdd(position_, move);
+		target_ = XMVectorAdd(target_, move);
+	}
+	if (GetAsyncKeyState('S') & 0x8000)
+	{
+		XMVECTOR move = XMVectorScale(forward, -moveSpeed);
+		position_ = XMVectorAdd(position_, move);
+		target_ = XMVectorAdd(target_, move);
+	}
+	if (GetAsyncKeyState('A') & 0x8000)
+	{
+		XMVECTOR move = XMVectorScale(right, moveSpeed);
+		position_ = XMVectorAdd(position_, move);
+		target_ = XMVectorAdd(target_, move);
+	}
+	if (GetAsyncKeyState('D') & 0x8000)
+	{
+		XMVECTOR move = XMVectorScale(right, -moveSpeed);
+		position_ = XMVectorAdd(position_, move);
+		target_ = XMVectorAdd(target_, move);
+	}
 	// çÇÇ≥í≤êÆÅiè„è∏Åj
 	if (GetAsyncKeyState(VK_UP) & 0x8000)
 	{

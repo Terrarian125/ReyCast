@@ -18,11 +18,11 @@ void Test::Initialize()
 
 	pFbx_ = new Fbx();
 	pFbx_->Load("WaterBlock.fbx");
-	transform_.scale_.x = 2.50f;
-	transform_.scale_.y = 2.50f;
-	transform_.scale_.z = 2.50f;
+	transform_.scale_.x = 1.0f;
+	transform_.scale_.y = 1.0f;
+	transform_.scale_.z = 1.0f;
 
-	hModel_ = Model::Load("StoneBlock.fbx");
+	hModel_ = Model::Load("WaterBlock.fbx");
 
 	assert(hModel_ >= 0);
 
