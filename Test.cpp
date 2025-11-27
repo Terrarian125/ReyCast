@@ -17,12 +17,12 @@ void Test::Initialize()
 	//Fbx‚Ì¶¬‚Æ‰Šú‰»
 
 	pFbx_ = new Fbx();
-	pFbx_->Load("WaterBlock.fbx");
+	pFbx_->Load("TestBlock.fbx");
 	transform_.scale_.x = 1.0f;
 	transform_.scale_.y = 1.0f;
 	transform_.scale_.z = 1.0f;
 
-	hModel_ = Model::Load("WaterBlock.fbx");
+	hModel_ = Model::Load("TestBlock.fbx");
 
 	assert(hModel_ >= 0);
 
@@ -30,7 +30,7 @@ void Test::Initialize()
 
 void Test::Update()
 {
-	transform_.rotate_.y += 0.4f;
+	//transform_.rotate_.y += 0.4f;
 }
 
 void Test::Draw()
