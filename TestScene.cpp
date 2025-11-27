@@ -2,6 +2,7 @@
 #include "TestScene.h"
 #include "Engine/Input.h"
 #include "Engine/SceneManager.h"
+#include "Test.h"
 
 TestScene::TestScene(GameObject* parent)
 	: GameObject(parent, "TestScene")
@@ -15,12 +16,11 @@ TestScene::~TestScene()
 void TestScene::Initialize()
 {
 	// Testを生成して、子に追加  
-	//Instanitiate<Test>(this);
+	Instanitiate<Test>(this);
 
-	// ★追加: Spriteオブジェクトを生成し、初期化する
+	//Spriteオブジェクトを生成し、初期化する
 	pBgSprite_ = new Sprite();
 	pBgSprite_->Initialize();
-
 }
 
 void TestScene::Update()
@@ -40,11 +40,11 @@ void TestScene::Update()
 void TestScene::Draw()
 {
 	//背景スプライトを描画する
-	if (pBgSprite_ != nullptr)
-	{
-		DirectX::XMMATRIX worldMatrix = DirectX::XMMatrixIdentity();
-		pBgSprite_->Draw(worldMatrix);
-	}
+	//if (pBgSprite_ != nullptr)
+	//{
+	//	DirectX::XMMATRIX worldMatrix = DirectX::XMMatrixIdentity();
+	//	pBgSprite_->Draw(worldMatrix);
+	//}
 }
 
 void TestScene::Release()
