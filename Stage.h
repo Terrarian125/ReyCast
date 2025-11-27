@@ -1,18 +1,19 @@
 #pragma once
 #include "Engine\\GameObject.h"
-#include "Engine/Sprite.h"
-//#include "Engine/SceneManager.h"
-
-class TestScene :
+class Stage :
 	public GameObject
 {
-public:
-	TestScene(GameObject* parent);
-	~TestScene();
+	Stage(GameObject* parent);
+	~Stage();
 	void Initialize() override;
 	void Update() override;
 	void Draw() override;
 	void Release() override;
-private:
-	Sprite* pBgSprite_;
+
+	//int GrassBlock;
+	//int SandBlock;
+	//int StoneBlock;
+	//int WaterBlock;
+	//int WhiteBlock;
 };
+

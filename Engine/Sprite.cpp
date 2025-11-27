@@ -85,7 +85,8 @@ HRESULT Sprite::Initialize()
 	}
 
 	pTexture_ = new Texture();
-	pTexture_->Load("dice.png");
+	pTexture_->Load("Assets/Bg00.png");
+	//pTexture_->Load("dice.png");
 
 	return S_OK;
 }

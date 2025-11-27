@@ -1,6 +1,6 @@
 #include "Direct3D.h"
 #include "SceneManager.h"
-//#include "..\\PlayScene.h"
+#include "..\\PlayScene.h"
 #include "..\\TestScene.h"
 //#include "..\\ClearScene.h"
 #include "Model.h"
@@ -33,8 +33,8 @@ void SceneManager::Update()
 			
 		switch (nextSceneID_)
 		{
-		//case SCENE_ID_PLAY:
-		//	Instanitiate<PlayScene>(this);
+		case SCENE_ID_PLAY:
+			Instanitiate<PlayScene>(this);
 			break;
 		case SCENE_ID_TEST:
 			Instanitiate<TestScene>(this);
