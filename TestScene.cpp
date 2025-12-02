@@ -2,7 +2,8 @@
 #include "TestScene.h"
 #include "Engine/Input.h"
 #include "Engine/SceneManager.h"
-#include "Test.h"
+#include "Stage.h"
+//#include "Test.h"
 
 TestScene::TestScene(GameObject* parent)
 	: GameObject(parent, "TestScene")
@@ -16,7 +17,9 @@ TestScene::~TestScene()
 void TestScene::Initialize()
 {
 	// Testを生成して、子に追加  
-	Instanitiate<Test>(this);
+	//Instanitiate<Test>(this);
+
+	Instanitiate<Stage>(this);
 
 	//Spriteオブジェクトを生成し、初期化する
 	pBgSprite_ = new Sprite();

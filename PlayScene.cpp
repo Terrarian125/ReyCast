@@ -2,6 +2,7 @@
 //#include "Player.h"
 //#include "Enemy.h"
 #include "Engine/SphereCollider.h"
+//#include "Stage.h"
 //#include "Bullet.h"
 //#include "Bar.h"
 
@@ -17,14 +18,7 @@ PlayScene::~PlayScene()
 
 void PlayScene::Initialize()
 {
-	//Instanitiate<Player>(this);
-
-	//// EnemyÇê∂ê¨
-	//Instanitiate<Enemy>(this);
-
-
-	//SphereCollider* col = new SphereCollider(0.5f);
-	//AddCollider(col);
+	//Instanitiate<Stage>(this);
 }
 
 void PlayScene::Update()
